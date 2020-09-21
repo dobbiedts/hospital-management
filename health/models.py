@@ -123,7 +123,7 @@ class Instance(models.Model):
         
     class Meta:
         ordering = ['date']
-        permissions = (("can_mark_admitted", "Set patient as admitted"),("can_mark_as_discharegd", "Set Patient as discharged"),)     
+        permissions = (("can_mark_admitted", "Set patient as admitted"),("can_mark_as_discharged", "Set Patient as discharged"),)     
 
     
     def __str__(self):

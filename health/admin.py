@@ -35,7 +35,7 @@ class InstanceAdmin(admin.ModelAdmin):
     
     fieldsets = (
         (None, {
-            'fields': ('patient', 'doctor', 'id')
+            'fields': ('patient', 'doctor', 'id',)
         }),
         ('Status', {
             'fields': ('status', 'date', 'operator')
