@@ -44,6 +44,10 @@ class Assigned_PatientViewSet(viewsets.ModelViewSet):
     serializer_class = Assigned_PatientSerializer
     
 class InstanceViewSet(viewsets.ModelViewSet):
-    queryset = Instance.objects.all().order_by('id')
+    #queryset = Instance.objects.all().order_by('id')
     serializer_class = InstanceSerializer
     
+    '''custom get_queryset'''
+    def get_queryset(self):
+        queryset = Instance.objects.all()
+        return queryset
