@@ -1,0 +1,1 @@
+web: gunicorn health_management.wsgi:application --log-file -
